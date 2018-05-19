@@ -109,5 +109,7 @@ li {
 }
 a {
   color: #42b983;
+  width: 50px;
+  height: 30px;
 }
 </style>
