@@ -1,17 +1,20 @@
 <template>
 <div id="login-input">
     <h4>登录</h4>
-    <div><label>账号</label><input type="tel" maxlength="11" placeholder="请输入手机号" v-model="account.phone"></div>
-    <div><label>密码</label><input type="passWord" placeholder="请输入密码" v-model="account.passWord"></div>
+    <div class="login-input"><label>账号</label><input type="tel" maxlength="11" placeholder="请输入手机号" v-model="account.phone"></div>
+    <div class="login-input"><label>密码</label><input type="passWord" placeholder="请输入密码" v-model="account.passWord"></div>
     <a class="submit" :class="{disabled:disabled}" @click="submit"><span>登录</span></a>
     <p>
       <router-link to="/home/login">手机快速注册</router-link>
       <router-link to="/home/fogetPassword">找回密码</router-link>
     </p>
+    <third-party></third-party>
 </div>
 </template>
 
 <script>
+import thirdParty from '../components/bottom/thirdParty'
+
 export default {
   name: 'Login',
   data () {
@@ -22,6 +25,9 @@ export default {
       },
       disabled: true
     }
+  },
+  components: {
+    thirdParty
   },
   methods: {
     submit () {
@@ -54,7 +60,7 @@ export default {
     font-size: 38px;
     margin-bottom: 100px;
   }
-  & div{
+  & .login-input{
     margin: 0 auto;
     position: relative;
     text-align: left;
