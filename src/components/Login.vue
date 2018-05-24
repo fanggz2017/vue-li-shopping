@@ -54,12 +54,6 @@ export default {
 <style lang="postcss" src="../assets/style/common.css"> </style>
 <style lang="postcss" scoped>
 #login-input{
-  & h4{
-    font-weight: 100;
-    letter-spacing: 3px;
-    font-size: 38px;
-    margin-bottom: 100px;
-  }
   & .login-input{
     margin: 0 auto;
     position: relative;
