@@ -11,7 +11,6 @@
     <third-party></third-party>
 </div>
 </template>
-
 <script>
 import thirdParty from '../components/bottom/thirdParty'
 
